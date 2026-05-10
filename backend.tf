@@ -1,7 +1,12 @@
 terraform {
-  backend "s3" {
-    bucket = "digitalwitchngbucketcloud1"
-    key    = "digitalwitchng/prodution/terraform.tfstate"
-    region = "us-west-1"
+  required_version = "1.15.2"
+
+  cloud {
+
+    organization = "Hyvics_Global"
+
+    workspaces {
+      name = "terraform-deployment"
+    }
   }
 }
