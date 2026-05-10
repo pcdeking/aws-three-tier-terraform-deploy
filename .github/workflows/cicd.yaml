@@ -77,7 +77,7 @@ jobs:
       #     ./tflint --init
       #     ./tflint       
       
-      - name: 'tfsec'
+      - name: 'run tfsec'
         run: tfsec . || true
 
       - name: 'terraform plan'
