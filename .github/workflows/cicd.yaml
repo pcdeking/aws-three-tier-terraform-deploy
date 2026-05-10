@@ -56,9 +56,9 @@ jobs:
       - name: 'install tfsec for security scanning'
         run: |
           curl -sSL https://raw.githubusercontent.com/aquasecurity/tfsec/master/scripts/install_linux.sh | bash
-          sudo mv tfsec /usr/local/bin/
-          chmod +x tfsec
           ./tfsec --version
+          
+          
           
 
       - name: 'terraform init'
