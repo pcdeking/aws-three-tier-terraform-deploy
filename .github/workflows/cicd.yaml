@@ -83,11 +83,11 @@ jobs:
       - name: 'terraform plan'
         run: terraform plan
 
-      - name: 'terraform apply'
-        run: terraform apply --auto-approve
+      # - name: 'terraform apply'
+      #   run: terraform apply --auto-approve
 
-      # - name: 'terraform destroy'
-      #   run: teraform destroy --auto-approve      
+      - name: 'terraform destroy'
+        run: teraform destroy --auto-approve      
 
 
 
