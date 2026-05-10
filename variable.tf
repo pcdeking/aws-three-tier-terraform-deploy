@@ -52,7 +52,7 @@ variable "min_size" {
 variable "instance_types" {
   description = "Instance types for the EKS node group"
   type        = list(string)
-  default     = ["t2.micro"]    
+  default     = ["t3.micro"]    
 } 
 
 variable "capacity_type" {
@@ -92,7 +92,7 @@ variable "domain-name" {
 variable "namecheap_api_user" {
   description = "Namecheap API user"
   type        = string
-  default     = "smartobi"
+  default     = "pcdeking"
 }
 variable "namecheap_api_key" {
   description = "Namecheap API key"
@@ -102,7 +102,7 @@ variable "namecheap_api_key" {
 variable "namecheap_username" {
   description = "Namecheap username"
   type        = string
-  default     = "smartobi"
+  default     = "pcdeking"
 }
 variable "namecheap_client_ip" {
   description = "Client IP for Namecheap API access"
@@ -164,5 +164,5 @@ variable "repository_name" {
 variable "email" {
   description = "Email address for notifications and certificates"
   type        = string
-  default     = "support@digitalwitchng.online"
+  default     = "pcakabuogu@gmail.com"
 }
