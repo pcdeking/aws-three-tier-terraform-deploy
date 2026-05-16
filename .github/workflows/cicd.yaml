@@ -93,7 +93,7 @@ jobs:
           sudo mv ./kubectl /usr/local/bin/kubectl 
           
       - name: 'authenticate to  EKS cluster'
-        run: aws eks update-kubeconfig --name ${{ vars.EKS_CLUSTER_NAME }} --region us-east-1
+        run: aws eks update-kubeconfig --name production-eks-cluster --region us-east-1
 
       - name: 'deploying the ClusterIssuer to EKS'
         run: kubectl apply -f ClusterIssuer.yaml
