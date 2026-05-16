@@ -57,7 +57,7 @@ variable "instance_types" {
 variable "capacity_type" {
   description = "Capacity type for the EKS node group"
   type        = string
-  default     = "FREE_TIER"
+  default     = "ON_DEMAND"
 }
 variable "eks_version" {
   description = "EKS cluster version"

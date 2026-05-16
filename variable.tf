@@ -58,12 +58,12 @@ variable "instance_types" {
 variable "capacity_type" {
   description = "Capacity type for the EKS node group"
   type        = string
-  default     = "FREE_TIER"
+  default     = "ON_DEMAND"
 }
 variable "eks_version" {
   description = "EKS cluster version"
   type        = string
-  default     = "1.32"
+  default     = "1.31"
 }
 variable "ami_type" {
   description = "AMI type for the EKS node group"
