@@ -52,7 +52,7 @@ variable "min_size" {
 variable "instance_types" {
   description = "Instance types for the EKS node group"
   type        = list(string)
-  default     = ["c7i-flex.large"]
+  default     = ["t3.small"]
 }
 
 variable "capacity_type" {
@@ -68,7 +68,7 @@ variable "eks_version" {
 variable "ami_type" {
   description = "AMI type for the EKS node group"
   type        = string
-  default     = "AL2_x86_64" # Use AL2_x86_64 for x86 instances, AL2_ARM_64 for ARM instances
+  default     = "AL2023_x86_64_STANDARD" # Use AL2_x86_64 for x86 instances, AL2_ARM_64 for ARM instances
 }
 
 variable "label_one" {
