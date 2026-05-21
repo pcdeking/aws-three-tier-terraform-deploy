@@ -99,7 +99,7 @@ jobs:
       #   run: kubectl apply -f ClusterIssuer.yaml
 
       # - name: deploying argocd ingress rule to EKS 
-      #   run: kubectl apply -f ingress-argocd.yaml -n argocd       
+      #   run: kubectl apply -f ingress-argocd.yaml -n argocd      
 
       - name: 'terraform destroy'
         run: terraform destroy --auto-approve      
