@@ -3,7 +3,7 @@ FROM ubuntu:22.04
 # Avoid interactive prompts during apt install
 ENV DEBIAN_FRONTEND=noninteractive
 
-# Install core tools: curl, git, jq, unzip, docker CLI, etc.
+# Install core tools: curl, git, jq, unzip, docker CLI, etc. \ represent new line in bash
 RUN apt-get update && apt-get install -y \
     curl \
     git \
